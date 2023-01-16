@@ -2,15 +2,9 @@ import java.util.Scanner;
 
 class Main {
     public static void main(String[] args) {
-        while (true) {
-            Scanner in = new Scanner(System.in);
-            String str = in.nextLine();
-            try {
-                System.out.println(calc(str));
-            } catch (RuntimeException e) {
-                System.out.println("Error");
-            }
-        }
+        Scanner in = new Scanner(System.in);
+        String str = in.nextLine();
+        System.out.println(calc(str));
     }
 
     public static String calc(String input) {
